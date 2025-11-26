@@ -21,14 +21,14 @@ Chaque exercice doit respecter la configuration suivante :
 
 ```bash
 # Avec Vite (recommandé)
-npm create vite@latest mes-[numero]-[nom] -- --template react-ts
+npm create vite@latest project-name -- --template react-ts
 
 ```
 
 #### Structure de Dossiers Obligatoire
 
 ```
-mes-[numero]-[nom]/
+project-name/
 ├── src/
 │   ├── components/        # Composants réutilisables
 │   ├── pages/            # Pages/vues de l'application
