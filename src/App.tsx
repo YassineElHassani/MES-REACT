@@ -6,6 +6,10 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ArticleDetail from "./pages/ArticleDetail";
 import NotFound from "./pages/NotFound";
+import ProtectedRoute from "./components/ProtectedRoute";
+import CreateArticle from "./pages/CreateArticle";
+import EditArticle from "./pages/EditArticle";
+import Login from "./pages/Login";
 
 export default function App() {
   return (
@@ -17,6 +21,28 @@ export default function App() {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
 
+        <Route path="article/:id" element={<ArticleDetail />} />
+
+        <Route
+          path="create"
+          element={
+            <ProtectedRoute>
+              <CreateArticle />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="edit/:id"
+          element={
+            <ProtectedRoute>
+              <EditArticle />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route path="login" element={<Login />} />
+        
         {/* Not found inside layout */}
         <Route path="*" element={<NotFound />} />
       </Route>
