@@ -10,6 +10,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import CreateArticle from "./pages/CreateArticle";
 import EditArticle from "./pages/EditArticle";
 import Login from "./pages/Login";
+import Cart from './pages/Cart';
 
 export default function App() {
   return (
@@ -40,6 +41,8 @@ export default function App() {
             </ProtectedRoute>
           }
         />
+
+        <Route path="/cart" element={<Cart />} />
 
         <Route path="login" element={<Login />} />
         
