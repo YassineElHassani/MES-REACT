@@ -12,6 +12,7 @@ import EditArticle from "./pages/EditArticle";
 import Login from "./pages/Login";
 import Cart from './pages/Cart';
 import Filter from './pages/Filter';
+import DemoHooksPage from './pages/DemoHooksPages';
 
 export default function App() {
   return (
@@ -43,9 +44,11 @@ export default function App() {
           }
         />
 
+        <Route path="/cart" element={<Cart />} />
+
         <Route path="/filter" element={<Filter />} />
 
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/mes5" element={<DemoHooksPage />} />
 
         <Route path="login" element={<Login />} />
         

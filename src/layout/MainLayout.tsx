@@ -41,6 +41,10 @@ export default function MainLayout() {
                   </span>
                 </NavLink>
 
+                <NavLink to="/mes5" className={({ isActive }) => isActive ? "bg-gray-900 px-3 py-2 rounded" : "hover:bg-gray-700 px-3 py-2 rounded"}>
+                  MES 5
+                </NavLink>
+
               </div>
             </div>
             <div className="ml-auto flex items-center gap-4">
