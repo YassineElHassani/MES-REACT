@@ -30,6 +30,10 @@ export default function MainLayout() {
                   Create Article
                 </NavLink>
 
+                <NavLink to="/filter" className={({ isActive }) => isActive ? "bg-gray-900 px-3 py-2 rounded" : "hover:bg-gray-700 px-3 py-2 rounded"}>
+                  Filter
+                </NavLink>
+
                 <NavLink to="/cart" className={({ isActive }) => isActive ? "bg-gray-900 px-3 py-2 rounded" : "hover:bg-gray-700 px-3 py-2 rounded"}>
                   Cart
                   <span className="ml-2 inline-flex items-center justify-center text-xs bg-blue-600 text-white rounded-full w-6 h-6">

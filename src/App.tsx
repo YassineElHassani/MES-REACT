@@ -11,6 +11,7 @@ import CreateArticle from "./pages/CreateArticle";
 import EditArticle from "./pages/EditArticle";
 import Login from "./pages/Login";
 import Cart from './pages/Cart';
+import Filter from './pages/Filter';
 
 export default function App() {
   return (
@@ -41,6 +42,8 @@ export default function App() {
             </ProtectedRoute>
           }
         />
+
+        <Route path="/filter" element={<Filter />} />
 
         <Route path="/cart" element={<Cart />} />
 
